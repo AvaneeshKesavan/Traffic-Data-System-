@@ -1,6 +1,10 @@
+#Author: Kesavan Avaneesh
+#Date: 21/11/2024
+#Student ID: IIT - 20240830 | UOW - 21197457
+
 import csv
 
-# Input Validation
+# Task A: Input Validation
 
 def is_leap_year(year):
     """
@@ -72,7 +76,7 @@ def validate_continue_input():
         else:
             print("Invalid input. Please enter Y/N.")  # Shows error for invalid input
 
-# Processed Outcomes
+# Task B: Processed Outcomes
 
 def process_csv_data(file_name):
     """
@@ -213,7 +217,7 @@ def display_outcomes(outcomes, file_name):
     print(f"The number of hours of rain for this date is {outcomes[14]}")
 
 
-# Save Results to Text File
+# Task C: Save Results to Text File
 
 def save_results_to_file(outcomes, fileName="results.txt", csv_file=None):
     """
@@ -268,6 +272,7 @@ def process_csv_data_with_histogram(file_name):
     return outcomes, hourly_counts_elm, hourly_counts_hanley
 
 
+# Task D
 import tkinter as tk
 
 class HistogramApp:
@@ -368,6 +373,7 @@ class HistogramApp:
         self.add_legend()
         self.root.mainloop()
 
+# Task E
 class MultiCSVProcessor:
     def __init__(self):
         """
@@ -446,4 +452,3 @@ class MultiCSVProcessor:
 if __name__ == "__main__":
     processor = MultiCSVProcessor()
     processor.process_files()
-
